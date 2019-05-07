@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { HamburgerMenuModel } from '../../models/hamburger-menu.model';
+
 
 @Component({
   selector: 'lcu-hamburger-menu',
@@ -6,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hamburger-menu.component.scss']
 })
 export class HamburgerMenuComponent implements OnInit {
-
-  constructor() { }
-
+  // public MenuItems: Array<HamburgerMenuModel>;
+  @Input() MenuItems: Array<HamburgerMenuModel>;
+  //protected _menuItems: any;
   ngOnInit() {
+  //   this.MenuItems = Constants.VAR_NAMES_MENU;
   }
-
 }
