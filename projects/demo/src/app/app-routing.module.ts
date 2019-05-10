@@ -5,6 +5,8 @@ import { TestPageComponent } from '@lowcodeunit/lcu-hamburger-menu-common';
 const routes: Routes = [
 //{ path: '', redirectTo: 'home', pathMatch: 'full'},
 { path: 'home', component: TestPageComponent},
+{ path: 'home/:params', component: TestPageComponent},
+
 ];
 
 @NgModule({
