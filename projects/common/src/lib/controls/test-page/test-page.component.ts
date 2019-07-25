@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
 import { MatDialog } from '@angular/material';
 import { TestModalComponent } from '../test-modal/test-modal.component';
 
@@ -11,7 +10,6 @@ import { TestModalComponent } from '../test-modal/test-modal.component';
 })
 export class TestPageComponent implements OnInit {
   public ID: any;
-  routeQueryParams$: Subscription;
 
   constructor(public dialog: MatDialog, private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.params.subscribe(data => {
