@@ -3,7 +3,7 @@ export class HamburgerMenuModel {
     public Url:string;
     public Disabled:string;
     public Icon?:string;
-    public Param?:string
+    public Param?:string;
 
     /**
      * 
@@ -17,7 +17,7 @@ export class HamburgerMenuModel {
      * 
      * @param param this is what can be passed to the routerLink in the insatnce of opening a modal  
      */
-    constructor(label: string, url: string, disabled: string, icon?: string, param?: string ){
+    constructor(label: string, url: string, disabled: string, icon?: string, param?: string){
         this.Label = label;
         this.Icon = icon;
         this.Url = url;
