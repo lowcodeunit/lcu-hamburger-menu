@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HamburgerMenuModel } from '@lowcodeunit/lcu-hamburger-menu-common/lcu.api';
+import { HamburgerMenuModel } from '@lowcodeunit/lcu-hamburger-menu-common';
 import { Constants } from './constants/constants';
 
 @Component({
