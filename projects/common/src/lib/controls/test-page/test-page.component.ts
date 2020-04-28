@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { TestModalComponent } from '../test-modal/test-modal.component';
 
 @Component({
@@ -26,7 +26,7 @@ export class TestPageComponent implements OnInit {
     const dialogRef = this.dialog.open(TestModalComponent, {
       width: '250px'
     });
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result: any) => {
       console.log('The dialog was closed');
       this.router.navigate(['../'], { relativeTo: this.activatedRoute });
     });
